@@ -29,8 +29,6 @@ app.whenReady().then(() => {
   createWindow();
 
   app.on('activate', function () {
-    // On macOS it's common to re-create a window in the app when the
-    // dock icon is clicked and there are no other windows open.
     if (BrowserWindow.getAllWindows().length === 0) {
       createWindow();
     }
@@ -48,7 +46,7 @@ ipcMain.on('message', async (event, message) => {
   if (message.command === "launch") {
     const beforeList = await fs.readdir("./Logs")
     console.log(beforeList.length)
-    pid = require('child_process').exec("C:\\Neos\\app\\Neos.exe -Screen -SkipIntroTutorial -DontAutoOpenCloudHome -DataPath C:\\Neos\\DataDir").pid
+    pid = require('child_process').exec(`${message.args.neosexe} -${message.args.device} ${message.args.skipTutorial ? "-SkipIntroTutorial" : ""}  ${message.args.dontopencloudhome ? "-DontAutoOpenCloudHome" : ""} -DataPath ${message.args.datadir}`).pid
     console.log(pid)
     catchLog(beforeList)
   }
