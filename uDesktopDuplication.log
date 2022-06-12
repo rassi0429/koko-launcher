@@ -1,0 +1,21 @@
+[uDD::Log][2022-06-12 09:47:09] Start
+[uDD::Log][2022-06-12 09:47:09] OS Version    : 10.0
+[uDD::Log][2022-06-12 09:47:09] Build Number  : 19044
+[uDD::Log][2022-06-12 09:47:09] Service Pack  : 
+[uDD::Log][2022-06-12 09:47:09] Graphics Card [0] : NVIDIA GeForce RTX 3060 Ti
+[uDD::Log][2022-06-12 09:47:09]   > Monitor[0] : \\.\DISPLAY1
+[uDD::Log][2022-06-12 09:47:09]   > Monitor[1] : \\.\DISPLAY2
+[uDD::Log][2022-06-12 09:47:09] Graphics Card [1] : Microsoft Basic Render Driver
+[uDD::Log][2022-06-12 09:47:09] Monitor::Initialized() =>
+[uDD::Log][2022-06-12 09:47:09]     ID    : 0
+[uDD::Log][2022-06-12 09:47:09]     Size  : (2560, 1440)
+[uDD::Log][2022-06-12 09:47:09]     DPI   : (108, 108)
+[uDD::Log][2022-06-12 09:47:09]     Rot   : Landscape
+[uDD::Log][2022-06-12 09:47:09] Duplicator::Initialize() => OK.
+[uDD::Log][2022-06-12 09:47:09] Monitor::Initialized() =>
+[uDD::Log][2022-06-12 09:47:09]     ID    : 1
+[uDD::Log][2022-06-12 09:47:09]     Size  : (3840, 2160)
+[uDD::Log][2022-06-12 09:47:09]     DPI   : (162, 161)
+[uDD::Log][2022-06-12 09:47:09]     Rot   : Landscape
+[uDD::Log][2022-06-12 09:47:09] Duplicator::Initialize() => OK.
+[uDD::Log][2022-06-12 09:49:07] Stop
