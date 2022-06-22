@@ -46,6 +46,7 @@ ipcMain.on('message', async (event, message) => {
   if (message.command === "launch") {
     const beforeList = await fs.readdir("./Logs")
     console.log(beforeList.length)
+    console.log(message.args)
     pid = require('child_process').exec(`${message.args.neosexe} -${message.args.device} ${message.args.skipTutorial ? "-SkipIntroTutorial" : ""}  ${message.args.dontopencloudhome ? "-DontAutoOpenCloudHome" : ""} -DataPath ${message.args.datadir}`).pid
     console.log(pid)
     catchLog(beforeList)
@@ -79,4 +80,4 @@ function catchLog(beforelist: string[]) {
 
 function sendLog(data) {
   mainWindow.webContents.send("neosLog", data)
-} 
+}
